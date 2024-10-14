@@ -1,10 +1,11 @@
 import pandas as pd
 import sys
 import os
-cur_root_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+cur_root_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(cur_root_path)
-from utils.metrics import *
 print(cur_root_path)
+# from utils import *
+
 
 class SafetyExtraction:
     def __init__(self, file_path: str) -> None:
@@ -20,7 +21,7 @@ class SafetyExtraction:
         except FileNotFoundError as e:
             print(f"File not found: {absolute_file_path}")
             raise
-        self.output_path = 'visualization/data/safety'
+        self.output_path = 'visualization/data_ui/safety'
         self.file['GPT4_harmful_binary'] = np.where(self.file['GPT4_action'] == 6,1, 0)
         self.file['llama_guard_output'] = np.where(self.file['llama_guard_output'] == 'unsafe',1, 0)
         self.file['llama_guard2_output'] = np.where(self.file['llama_guard2_output'] == 'unsafe',1, 0)
@@ -160,7 +161,7 @@ class RobustnessExtraction:
         except FileNotFoundError as e:
             print(f"File not found: {absolute_file_path}")
             raise
-        self.output_path = 'visualization/data/robustness'
+        self.output_path = 'visualization/data_ui/robustness'
         self.file['llama_guard_output'] = np.where(self.file['llama_guard_output'] == 'unsafe',1, 0)
         self.file['llama_guard2_output'] = np.where(self.file['llama_guard2_output'] == 'unsafe',1, 0)
         self.hga_data = self.file[self.file['Algo'] == 'hga']
@@ -282,7 +283,7 @@ class HallucinationExtraction:
         except FileNotFoundError as e:
             print(f"File not found: {absolute_file_path}")
             raise
-        self.output_path = 'visualization/data/hallucination'
+        self.output_path = 'visualization/data_ui/hallucination'
         
     
     def number_pie_chart(self):
