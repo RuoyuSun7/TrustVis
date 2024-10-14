@@ -1,7 +1,5 @@
 {
   "/tests/page": "app/tests/page.js",
-  "/tests/create/page": "app/tests/create/page.js",
   "/reports/[id]/page": "app/reports/[id]/page.js",
-  "/models/page": "app/models/page.js",
-  "/models/create/page": "app/models/create/page.js"
+  "/tests/create/page": "app/tests/create/page.js"
 }
