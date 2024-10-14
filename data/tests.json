@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Tests LLM Model",
+    "model": 1,
+    "dimensions": [
+      "safety",
+      "robustness"
+    ],
+    "testsSize": 1,
+    "executionsCount": 1,
+    "lastExecutionDate": "2024-04-19T17:07:16.990+00:00",
+    "lastExecutionResult": "FAILED",
+    "lastExecutionTestResultCount": {
+      "FAILED": 1,
+      "PASSED": 100
+    }
+  },
+  {
+    "id": 2,
+    "name": "Tests xxx  Model",
+    "model": 2,
+    "dimensions": [
+      "safety",
+      "robustness",
+      "hallucination"
+    ],
+    "testsSize": 7,
+    "executionsCount": 13,
+    "lastExecutionDate": "2024-05-01T08:49:45.568+00:00",
+    "lastExecutionResult": "FAILED",
+    "lastExecutionTestResultCount": {
+      "ERROR": 1,
+      "FAILED": 2,
+      "PASSED": 1
+    }
+  },
+  {
+    "id": 3,
+    "name": "Local Model2",
+    "model": 3,
+    "dimensions": [
+      "robustness"
+    ],
+    "testsSize": 1,
+    "executionsCount": 1,
+    "lastExecutionDate": "2024-04-19T17:07:16.990+00:00",
+    "lastExecutionResult": "FAILED",
+    "lastExecutionTestResultCount": {
+      "FAILED": 1,
+      "PASSED": 100
+    }
+  },
+  {
+    "id": 4,
+    "name": "llama3_8b_test",
+    "model": 1,
+    "dimensions": [
+      "safety",
+      "robustness",
+      "hallucination"
+    ],
+    "testsSize": 1,
+    "executionsCount": 1,
+    "lastExecutionDate": "2024-04-19T17:07:16.990+00:00",
+    "lastExecutionResult": "FAILED",
+    "lastExecutionTestResultCount": {
+      "FAILED": 1,
+      "PASSED": 100
+    }
+  },
+  {
+    "id": 5,
+    "name": "TestLlama38b",
+    "model": 1,
+    "dimensions": [
+      "safety",
+      "robustness",
+      "hallucination"
+    ],
+    "testsSize": 1,
+    "executionsCount": 1,
+    "lastExecutionDate": "2024-04-19T17:07:16.990+00:00",
+    "lastExecutionResult": "FAILED",
+    "lastExecutionTestResultCount": {
+      "FAILED": 1,
+      "PASSED": 100
+    }
+  }
+]

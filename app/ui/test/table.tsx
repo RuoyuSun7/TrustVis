@@ -1,0 +1,62 @@
+
+import { ViewDetail } from '@/app/ui/datasets/buttons';
+export default async function InstancesTable(
+  { instances }: { instances: any }
+) {
+
+  return (
+    <div className="mt-6 flow-root">
+      <div className="inline-block min-w-full align-middle">
+        <div className="rounded-lg bg-table-bg-color p-2 md:pt-0">
+          <table className="hidden min-w-full text-gray-900 md:table">
+            <thead className="rounded-lg text-left text-sm font-normal">
+              <tr>
+                <th scope="col" className="px-4 py-5 font-medium">
+                  ID
+                </th>
+                <th scope="col" className="px-4 py-5 font-medium">
+                  Name
+                </th>
+                <th scope="col" className="px-4 py-5 font-medium">
+                  Status
+                </th>
+                <th scope="col" className="px-3 py-5 font-medium">
+                  Metric
+                </th>
+                <th scope="col" className="px-3 py-5 font-medium">
+                  Actions
+                </th>
+              </tr>
+            </thead>
+            <tbody className="bg-white">
+              {instances?.map((instance: any) => (
+                <tr
+                  key={instance.id}
+                  className="w-full border-b py-3 text-sm last-of-type:border-none [&:first-child>td:first-child]:rounded-tl-lg [&:first-child>td:last-child]:rounded-tr-lg [&:last-child>td:first-child]:rounded-bl-lg [&:last-child>td:last-child]:rounded-br-lg"
+                >
+                  <td className="whitespace-nowrap px-3 py-3">
+                    {instance.id}
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-3">
+                    {instance.displayName}
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-3">
+                    {instance.status}
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-3">
+                    {instance.metric}
+                  </td>
+                  <td className="whitespace-nowrap px-3 py-3">
+                    <div className="flex justify-end gap-3">
+                      <ViewDetail id={instance.id} type="reports" />
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  );
+}

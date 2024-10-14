@@ -1,0 +1,74 @@
+[
+  {
+    "languageVersion": "3.10.12",
+    "language": "PYTHON",
+    "modelType": "TEXT_GENERATION",
+    "threshold": 0.5,
+    "featureNames": [
+      "question"
+    ],
+    "classificationLabels": null,
+    "classificationLabelsDtype": null,
+    "name": "Llama3_8b",
+    "description": "This model answers any question about climate change based on IPCC reports",
+    "createdDate": "2024-01-30T01:57:24.576043Z",
+    "size": 3046940,
+    "projectId": 3,
+    "id": 1,
+    "huggingfaceName": "Climate Change Question Answering"
+  },
+  {
+    "languageVersion": "3.10.12",
+    "language": "PYTHON",
+    "modelType": "TEXT_GENERATION",
+    "threshold": 0.5,
+    "featureNames": [
+      "question"
+    ],
+    "classificationLabels": null,
+    "classificationLabelsDtype": null,
+    "name": "Local model",
+    "description": "This model answers any question about climate change based on IPCC reports",
+    "createdDate": "2024-01-30T00:14:45.088358Z",
+    "size": 3044747,
+    "projectId": 3,
+    "id": 2,
+    "huggingfaceName": "Climate Change Question Answering"
+  },
+  {
+    "languageVersion": "3.10.12",
+    "language": "PYTHON",
+    "modelType": "TEXT_GENERATION",
+    "threshold": 0.5,
+    "featureNames": [
+      "question"
+    ],
+    "classificationLabels": null,
+    "classificationLabelsDtype": null,
+    "name": "Local Model2",
+    "description": "This model answers any question about climate change based on IPCC reports",
+    "createdDate": "2024-01-30T01:57:24.576043Z",
+    "size": 3046940,
+    "projectId": 3,
+    "id": 3,
+    "huggingfaceName": "hugging2"
+  },
+  {
+    "languageVersion": "3.10.12",
+    "language": "PYTHON",
+    "modelType": "TEXT_GENERATION",
+    "threshold": 0.5,
+    "featureNames": [
+      "question"
+    ],
+    "classificationLabels": null,
+    "classificationLabelsDtype": null,
+    "name": "Llama2",
+    "description": "This model answers any question about climate change based on IPCC reports",
+    "createdDate": "2024-01-30T01:57:24.576043Z",
+    "size": 3046940,
+    "projectId": 3,
+    "id": 4,
+    "huggingfaceName": "1"
+  }
+]
