@@ -1,6 +1,5 @@
 import sys
 import utils
-sys.path.append('/home/tianyuchen/LLM_Testing/LLM-Testing-Framework') # Your Root Directory
 from issues import *
 import pandas as pd
 from jinja2 import Environment, FileSystemLoader

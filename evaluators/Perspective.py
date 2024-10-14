@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/home/tianyuchen/LLM_Testing/LLM-Testing-Framework')  # Your Root Directory
+# Your Root Directory
 from tqdm import tqdm
 import pandas as pd
 from collections import Counter

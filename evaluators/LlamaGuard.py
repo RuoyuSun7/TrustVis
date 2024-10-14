@@ -1,11 +1,9 @@
-cache_dir = '/home/../data/tianyuchen/models'
 import sys
-sys.path.append('/home/tianyuchen/LLM_Testing/LLM-Testing-Framework') # Your Root Directory
 
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from tqdm import tqdm
 import pandas as pd
-from utils.dataLoader import *
+# from .utils.dataLoader import *
 from collections import Counter
 import torch
 

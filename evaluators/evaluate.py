@@ -1,10 +1,10 @@
 import os
 import sys
-sys.path.append('/home/tianyuchen/LLM_Testing/LLM-Testing-Framework') # Your Root Directory
 import numpy as np
 from LlamaGuard import *
 from Longformer import *
 from Perspective import *
+import json
 def save_to_json_line_by_line(df, output_path):
     # Open the output file in write mode
     with open(output_path, 'w') as outfile:
@@ -105,4 +105,7 @@ def robustness_eval(model):
 # safety_eval('ChatGPT')
 
 # safety_eval('vicuna-7b')
-robustness_eval('llama2-7b-chat')
+
+safety_eval('llama2_7b-chat')
+
+#robustness_eval('llama2-7b-chat')

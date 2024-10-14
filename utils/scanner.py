@@ -1,5 +1,4 @@
 import sys
-sys.path.append('/home/tianyuchen/LLM_Testing/LLM-Testing-Framework') # Your Root Directory
 
 from report import *
 import pandas as pd
