@@ -39,5 +39,5 @@ def extract_hallucination(model:str):
     print('extraction done')
     
 # extract_safety('ChatGPT')
-#extract_robustness('llama2-7b-chat')
-extract_hallucination('ChatGPT')
+extract_robustness('llama2-7b-chat')
+#extract_hallucination('ChatGPT')

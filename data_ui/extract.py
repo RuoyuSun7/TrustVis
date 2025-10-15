@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import sys
 import os
 cur_root_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -222,13 +223,13 @@ class RobustnessExtraction:
         for tax in df['MLC_taxonomy'].unique():
             df_tax = df[(df['MLC_taxonomy'] == tax)]
             df_tax_jailbreak = df_tax[df_tax['is_success'] == True]
-            total_num = len(df_tax)
+            tax_num = len(df_tax)
             tax_jailbreak = len(df_tax_jailbreak)
-            tax_robuts = total_num - tax_jailbreak
+            tax_robuts = tax_num - tax_jailbreak
             new_row = {
                 'MLC_taxonomy': tax,
-                'number_robust': tax_jailbreak,
-                'number_jailbreak': tax_robuts
+                'number_robust': tax_robuts,
+                'number_jailbreak': tax_jailbreak
             }
             df_out = df_out._append(new_row, ignore_index=True)
         output = os.path.join(self.output_path, "2.jailbreak_number_overview_tax.json")
@@ -313,7 +314,7 @@ def safety_func():
     safety.unsafe_samples_display()
 
 def robust_func():
-    robust_main = RobustnessExtraction('dataset_out/Robustness/labeled_output/llama2-7b-chat-main-evaluated.json')
+    robust_main = RobustnessExtraction('dataset_out/Robustness/AutoDAN/llama2-7b-chat-evaluated.json')
     robust_main.statistic_overview()
     robust_main.jailbreak_number_overview()
     robust_main.jailbreak_samples_display()
@@ -324,5 +325,5 @@ def hallucination_func():
     halluciniation.number_pie_chart()
     halluciniation.false_samples_display()
 if __name__ == '__main__':
-    #robust_func()
-    hallucination_func()
+    robust_func()
+    #hallucination_func()
