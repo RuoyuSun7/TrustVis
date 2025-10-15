@@ -81,19 +81,11 @@ Python modules under `llm/` demonstrate how to talk to providers such as OpenAI,
 
 TrustVis is developed and maintained by Momentum Lab. Please reach out to the team for collaboration opportunities or if you plan to extend the platform to new evaluation dimensions.
 
-## Citation
+<!-- ## Citation
 
 If TrustVis supports your research or product work, please cite Momentum Lab:
+ -->
 
-```bibtex
-@misc{momentum_lab_trustvis_2024,
-  author       = {Momentum Lab},
-  title        = {TrustVis: Evaluating Safety, Robustness, and Hallucination Risks in Large Language Models},
-  year         = {2024},
-  url          = {https://github.com/Momentum-Lab/TrustVis},
-  note         = {Accessed: 2024-05-01}
-}
-```
 
 ## License
 
