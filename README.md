@@ -2,6 +2,8 @@
 
 TrustVis is an evaluation and visualization toolkit for assessing large language model (LLM) trustworthiness across safety, robustness, and hallucination dimensions. It couples a Next.js dashboard with Python pipelines that consolidate benchmark runs into interactive reports.
 
+By Momentum Lab@UA
+
 ## Highlights
 - Next.js App Router UI styled with MUI + Tailwind for browsing datasets, models, test executions, and report cards.
 - Safety, robustness, and hallucination views powered by reusable chart/table components that read from JSON artefacts in `data_ui/`.
@@ -74,6 +76,24 @@ Notebooks in `notebook/` mirror the scripted pipeline and provide interactive ex
 ## Integrating LLM or Backend Services
 
 Python modules under `llm/` demonstrate how to talk to providers such as OpenAI, Anthropic, or local LLaMA APIs. The evaluator pipeline expects access to these services when generating new annotations, so configure the relevant API keys or endpoints before running large batches.
+
+## Credits
+
+TrustVis is developed and maintained by Momentum Lab. Please reach out to the team for collaboration opportunities or if you plan to extend the platform to new evaluation dimensions.
+
+## Citation
+
+If TrustVis supports your research or product work, please cite Momentum Lab:
+
+```bibtex
+@misc{momentum_lab_trustvis_2024,
+  author       = {Momentum Lab},
+  title        = {TrustVis: Evaluating Safety, Robustness, and Hallucination Risks in Large Language Models},
+  year         = {2024},
+  url          = {https://github.com/Momentum-Lab/TrustVis},
+  note         = {Accessed: 2024-05-01}
+}
+```
 
 ## License
 
